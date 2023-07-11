@@ -1,0 +1,19 @@
+### Simple Network Managment Protocol
+- SNMP is used to collect data related to network changes or to determine the status of network-connected devices.
+- SNMP talks to your network to find out information related to this network device activity.
+- it tracks bytes, packets, and errors transmitted and received on a router, connection speed between devices, or the number of hits a web server receives.
+- SNMP runs on the application layer and consists of a **SNMP manager** and a **SNMP agent**.
+- The SNMP manager is the software that is running on a pc or server that will monitor the network devices.
+- the SNMP agent runs on the network device.
+- The database is called the **MIB (Management Information Base)** and an object could be the interface status on the router (up or down) or perhaps the CPU load at a certain moment.
+- An object in the MIB is called an **OID (Object Identifier)**.
+- SNMP manager will send a periodic data to the agents and can store those data.
+- It’s also possible to configure your network devices through SNMP. This might be useful to configure a large number of switches or routers from your network management system so you don’t have to telnet/ssh into each device separately to make changes.
+- The packet that we use to poll information is called a **SNMP GET message** and the packet that is used to write a configuration is a **SNMP SET message**.
+- **SNMP traps** a trap is a notification that it **sent immediately** as soon as something occurs, for example, an interface that goes down.
+- there is **no acknowledgment** for the SNMP trap, so you never know if the trap made it to the NMS or not.
+- To define OID, it's an address used to uniquely identify managed devices and their statuses.
+- a single interface on a router has over 20 things we could check: input/output errors, sent/received packets, interface status, and so on. Each of these things to check has a different OID (Object Identifier).
+- **SNMP Trap Message**
+	- The SNMPTRAP command is a common way for devices to send alerts.
+	- These are asynchronous messages sent to the manager by an agent when something needs to be reported.

@@ -1,0 +1,4 @@
+- Spanning-tree BPDUguard is one of the features that helps you protect your spanning-tree topology.
+- By default spanning tree will send and receive BPDUs on all interfaces.
+- Someone with curious hostile intentions could start a tool that generates BPDUs with a superior bridge ID.
+- our switches will believe that the root bridge can now be reached through SW2 and we’ll have a spanning tree re-calculation.

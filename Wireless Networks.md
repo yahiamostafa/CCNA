@@ -1,0 +1,11 @@
+- #### Why wireless cables?
+	- Cables free (You don't have to use cable to connect to the internet.)
+	- You can access the network using your moble or labtop.
+- we are using radio waves to transmit out data.
+- Wireless is half-duplex since we are sending and receiving on the same frequency.
+- We do have a protocol that deals with this called **CSMA/CA** which stands for Carrier Sense Multi Access / Collision Avoidance
+- Higher frequencies will give you higher data rates, the higher your frequency the more “waves” you have in a given time cycle
+- Enterprise wireless LANs use a WLC (Wireless LAN Controller) and LWAPs (Light-Weight Access Point).
+- Management tasks like creating wireless networks, authentication and roaming is all done in the WLC. The LWAPs are responsible of forwarding wireless traffic to and from the LAN.
+- The WLC and LWAPs allow us to create a big, scalable wireless network.
+- When the router starts, it first initializes ROMMON. This is a bit similar to the BIOS of a computer. It allows the router to perform some basic functions like loading the IOS operating system.

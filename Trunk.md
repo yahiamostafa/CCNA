@@ -1,0 +1,7 @@
+- If you want to VLAN traffic between switches we have to use a **trunk**.
+- A trunk connection is simply said nothing more but a normal link but it is able to pass traffic from different VLANs and has a method to separate traffic between VLANs.
+- Trunks are required to carry VLAN traffic from one switch to another.
+- dot1q(802.1q) tagging protocol, it allows other tags to pass this switch to the other one.
+- native vlan is untagged : it should be same on all interfaces.
+- dynamic auto --> it will operate like the other end (default)
+- dynamic desirable --> it tends to be a trunk except for access.

@@ -1,0 +1,19 @@
+- ## Power over Ethernet (PoE)
+	- Power over Ethernet (PoE) is a technology we use to power devices through regular Ethernet network cables.
+	- PoE was invented when the first VoIP phones were introduced. Analog phones are powered directly through the same copper wires we use for voice calls.
+	- VoIP phones use Ethernet cables without power, so they required a power adapter. Our old analog phones only required one cable, the VoIP phones two. This was a step backward, which is why PoE was invented.
+	- Nowadays, we use PoE for many devices. For example:
+		-   VoIP phones
+		-   IP cameras
+		-   Wireless access points
+		-   IoT devices
+		-   PoS devices
+		-   Raspberry Pi
+		-   Arduino devices
+		-   Small routers and switches
+	- A device that is powered by PoE is called a **powered device (PD)**.
+	- A device that provides power on the cable is called **Power Sourcing Equipment (PSE)**. We have two options:
+	- **End Span**
+		- The PoE endspan method uses a switch **with integrated PoE**. You connect your end device to the switch, and it will detect whether the end device is PoE compatible and, if so, enables power automatically.
+	- **Mid Span**
+		- The PoE midspan method uses **PoE injectors** to add PoE to regular non-PoE links. You can use these to add PoE to your network **without adding or replacing** your non-PoE switches. These are (usually) intelligent devices, and like a PoE switch, they detect whether the PD requires power and, if so, enables power. PoE injectors are useful when you only have a few devices you want to power.

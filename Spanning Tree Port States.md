@@ -1,0 +1,5 @@
+- every time you plug in a cable the led above the interface was orange and after a while became green. What is happening at this moment is that spanning tree is determining the state of the interface.
+-   **Listening state**: Only a root or designated port will move to the listening state. The non-designated port will stay in the blocking state.No data transmission occurs at this state for 15 seconds just to make sure the topology doesn’t change in the meantime. After the listening state we move to the learning state.
+-   **Learning state:** At this moment the interface will process Ethernet frames by looking at the source MAC address to fill the mac-address-table. Ethernet frames however are not forwarded to the destination. It takes 15 seconds to move to the next state called the forwarding state.
+-   **Forwarding state:** This is the final state of the interface and finally the interface will forward Ethernet frames so that we have data transmission!
+- When a port is not a designated or root port it will be in **blocking mode**.

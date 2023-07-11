@@ -1,0 +1,4 @@
+- All **native VLAN traffic is untagged. it** doesn’t have an 802.1Q tag on the Ethernet frame.
+- When your Cisco switches receive an Ethernet frame without a tag on an 802.1Q enabled interface, it will assume that it belongs to the native VLAN.
+- For this reason, you need to make sure that the native VLAN is **the same on both sides**.
+- some of the management protocols like CDP (Cisco Discovery Protocol) are sent on the native VLAN.

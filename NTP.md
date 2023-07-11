@@ -1,0 +1,12 @@
+### Network Time Protocol NTP
+- Network Time Protocol (NTP) is an internet protocol used to synchronize with central source clock.
+- For network devices like routers, switches or firewalls this is very important because we want to make sure that logging information and timestamps have the accurate time and date.
+- If you ever have network issues or get hacked, you want to make sure you know exactly what and _when_ it happened.
+- File systems updates carried out across several computers depend on synchronized clock times.
+- NTP uses a concept called “stratum” that defines how many NTP hops away a device is from an authorative time source. For example, a device with stratum 1 is a very accurate device and might have an atomic clock attached to it. Another NTP server that is using this stratum 1 server to sync its own time would be a stratum 2 device because it’s one NTP hop further away from the source. When you configure multiple NTP servers, the client will prefer the NTP server with the lowest stratum value.
+- Cisco routers and switches can use 3 different NTP modes:
+	- NTP Client mode.
+	- NTP Server mode.
+	- NTP Symmetric Active mode.
+		- is used between NTP devices to synchronize with each other, it’s used as a backup mechanism when they are unable to reach the (external) NTP server.
+- NTP uses UDP on port 123.
